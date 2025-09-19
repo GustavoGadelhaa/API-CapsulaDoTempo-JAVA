@@ -38,13 +38,13 @@ O sistema agenda automaticamente a verificação das mensagens e, quando a data 
 
 ---
 
-### Exemplo de requisição para criar mensagem `( DataEnvio:dd-MM-yyyy )` :
+### Exemplo de requisição para criar mensagem `( DataEnvio:yyyy-MM-dd )` :
 `POST http://localhost:8080/api/mensagens`  
 Body (JSON):
 ```json
 {
   "mensagem": "Mensagem para o futuro!",
-  "dataEnvio": "19-09-2026",
+  "dataEnvio": "2025-09-18",
   "nome": "Gustavo"
 }
 ```
@@ -53,7 +53,7 @@ Body (JSON):
 {
   "id": 1,
   "mensagem": "Mensagem para o futuro!",
-  "dataEnvio": "19-09-2026",
+  "dataEnvio": "2025-09-18",
   "enviada": false,
   "nome": "Gustavo"
 }
@@ -70,7 +70,7 @@ Caso positivo✅:
 
 * Imprime a mensagem no console no formato: *
 ```
-Mensagem de Hoje: 19-09-2026 para Gustavo, a Mensagem é: MENSAGEM PARA O FUTURO!
+Mensagem de Hoje: 2025-09-18 para Gustavo, a Mensagem é: MENSAGEM PARA O FUTURO!
 ```
 
 ## Método que verifica as Menssagens e envia pro console:
