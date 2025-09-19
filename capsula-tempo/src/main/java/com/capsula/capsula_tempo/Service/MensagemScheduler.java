@@ -22,12 +22,10 @@ public class MensagemScheduler {
     public void verificarMensagens() {
         List<Mensagem> MsgsPendentes = mensagemRepository.findByEnviadaFalse();
         LocalDate hoje = LocalDate.now();
-
         for (Mensagem p : MsgsPendentes) {
-
             if (p.getDataEnvio().isBefore(hoje) && !p.isEnviada()) {
-                System.out.println("\n\nMensagem de Hoje: " + p.getDataEnvio() + " para " + p.getNome() +
-                        ", a Mensagem é: " + p.getMensagem().toUpperCase());
+                System.out.println("\n\nMensagem de Hoje: " + p.getDataEnvio() +
+                " para " + p.getNome() + ", a Mensagem é: " + p.getMensagem().toUpperCase());
                 p.setEnviada(true);
                 mensagemRepository.save(p);
             }
