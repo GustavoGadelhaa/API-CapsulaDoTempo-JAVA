@@ -24,7 +24,7 @@ public class Mensagem {
 
     private String mensagem;
 
-    @JsonFormat(pattern = "dd-MM-yyyy")
+    @JsonFormat(pattern = "yyyy-MM-dd")
     private LocalDate dataEnvio;
 
     private boolean enviada = false;
