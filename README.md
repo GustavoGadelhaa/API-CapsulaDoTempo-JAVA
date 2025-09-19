@@ -73,7 +73,7 @@ Caso positivo✅:
 Mensagem de Hoje: 2025-09-18 para Gustavo, a Mensagem é: MENSAGEM PARA O FUTURO!
 ```
 
-## Método que verifica as Menssagens e envia pro console:
+## Método que verifica as Mensagens e envia pro console:
 
 ```java
 @Async
